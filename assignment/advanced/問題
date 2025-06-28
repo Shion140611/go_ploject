@@ -1,0 +1,31 @@
+難易度：上級
+
+🧠 目的
+Goの強みである**並行処理（goroutine + channel + sync.WaitGroup）**を実践的に学ぶ。
+
+📝 要件：
+複数のテキストファイル（file1.txt, file2.txt, file3.txt）を対象にする
+各ファイルごとにgoroutineで並列に単語数をカウント
+最終的に全ファイルの合計単語数を出力
+sync.WaitGroup を使ってすべての処理が終わるのを待つ
+単語数の受け渡しには channel を使う
+
+✅ 制約＆補足
+ファイル名：file1.txt, file2.txt, file3.txt（事前に用意）
+並行処理：goroutine + channel
+完了管理：sync.WaitGroup 使用
+単語数：strings.Fields() で分割し len() でカウント
+
+🔄 実行例（ファイルの中身は以下と仮定）
+file1.txt → "Go is simple and powerful"
+file2.txt → "I love programming in Go"
+file3.txt → "Concurrency is not parallelism"
+
+ファイル読み取り処理を開始します  
+file1.txt: 5 words  
+file2.txt: 5 words  
+file3.txt: 4 words  
+Total: 14 words  
+ファイル読み取り処理を終了します
+
+

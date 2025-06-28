@@ -1,0 +1,19 @@
+難易度：初級
+
+🧠 目的
+文法と基本構文に慣れる
+
+問題内容
+📝 要件：
+偶数か奇数かを判定する関数を作れ
+
+✅ 制約＆補足
+関数名：isEven
+引数：int
+戻り値：bool
+使用例：//isEven(4) true, isEven(5) false
+
+🔄 実行例
+isEven(4) true
+isEven(5) false
+
