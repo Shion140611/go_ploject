@@ -1,0 +1,18 @@
+難易度：初級（Gin API編）
+🧠 目的
+Ginを使ってAPIサーバーを立ち上げ、GETリクエストの基本的なレスポンスを理解する
+
+📝 要件
+GET /hello にアクセスしたとき、JSON形式でメッセージ "Hello, Gin!" を返すAPIを作れ
+
+✅ 制約＆補足
+使用するライブラリ：github.com/gin-gonic/gin
+ポート：8080 で起動すること
+エンドポイント：GET /hello
+レスポンス形式（JSON）：
+json
+{"message": "Hello, Gin!"}
+
+🔄 実行例
+$ curl http://localhost:8080/hello
+→ {"message":"Hello, Gin!"}
